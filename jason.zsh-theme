@@ -3,11 +3,6 @@ local return_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ %s)%{$rese
 
 local current_dir='%{$terminfo[bold]$fg[blue]%}%~%{$reset_color%}'
 
-local ruby_version=''
-if which rbenv &> /dev/null; then
-  ruby_version='%{$fg[red]%}‹ruby-$(rbenv_prompt_info)›%{$reset_color%}'
-fi
-
 local node_version=''
 if which node &> /dev/null; then
   node_version='%{$fg[green]%}‹node-$(node -v)›%{$reset_color%}'
@@ -15,7 +10,7 @@ fi
 
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
-PROMPT="${current_dir} ${ruby_version} ${node_version} ${git_branch}
+PROMPT="${current_dir} ${node_version} ${git_branch}
 ${return_status}"
 
 RPROMPT='%{$(echotc UP 1)%}$(git_prompt_status)%{$(echotc DO 1)%}%{$reset_color%}'
