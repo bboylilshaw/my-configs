@@ -8,7 +8,6 @@ export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
 source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/anaconda3/bin:"$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/qt/bin:$PATH"
 
 # aliases
 alias zshconfig="vim ~/.zshrc"
