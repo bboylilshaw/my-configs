@@ -3,7 +3,15 @@ export ZSH="/Users/yxiao6/.oh-my-zsh"
 
 ZSH_THEME="jason"
 
-plugins=(git z osx docker zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
+plugins=(
+	git 
+	z 
+	osx 
+	docker 
+	zsh-autosuggestions 
+	zsh-syntax-highlighting 
+	zsh-history-substring-search
+)
 
 
 # nvm config
