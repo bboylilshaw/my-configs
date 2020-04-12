@@ -234,13 +234,15 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Workspace/my-configs/iterm2/general_config</string>
+	<string>~/Workspace/my-configs/iterm2/profiles</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -285,11 +287,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 118 224 275 0 0 1344 817 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>272 285 799 448 0 0 1344 817 </string>
+	<string>251 196 841 470 0 0 1344 817 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>197 1464 735 382 0 0 1344 817 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 58 1344 759 0 0 1344 817 </string>
+	<string>0 35 1344 782 0 0 1344 817 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 35 1145 782 0 0 1344 817 </string>
 	<key>New Bookmarks</key>
@@ -1236,7 +1238,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>15</integer>
 			<key>Working Directory</key>
 			<string>/Users/jasonxiao</string>
 		</dict>
@@ -2230,7 +2232,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>29B74EFB-6990-463B-B215-A0154956A4C5</string>
 	<key>NoSyncLastTipTime</key>
-	<real>608190907.18162894</real>
+	<real>608281451.242944</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
 	<integer>11</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
@@ -2962,7 +2964,7 @@
 	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
 	<dict>
 		<key>Initial Directory</key>
-		<string>/Users/yxiao6/Desktop</string>
+		<string>/Users/yxiao6/Workspace/my-configs/iterm2/profiles</string>
 	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>606979157.77224302</real>
@@ -2971,10 +2973,12 @@
 		<string>0004</string>
 		<string>0000</string>
 		<string>0010</string>
-		<string>0014</string>
+		<string>0008</string>
+		<string>0017</string>
 		<string>0007</string>
 		<string>0003</string>
 		<string>0013</string>
+		<string>0016</string>
 		<string>0006</string>
 		<string>0002</string>
 		<string>000</string>
@@ -2983,8 +2987,9 @@
 		<string>0005</string>
 		<string>0001</string>
 		<string>0011</string>
-		<string>0008</string>
 		<string>0015</string>
+		<string>0014</string>
+		<string>0018</string>
 	</array>
 	<key>OpenFileInNewWindows</key>
 	<false/>
@@ -3025,6 +3030,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/yxiao6/Workspace/my-configs/iterm2/general_config</string>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
