@@ -1,0 +1,12 @@
+alias zshcfg="nvim ~/.zshrc"
+
+# vim editor
+alias nvimcfg="nvim ~/.config/nvim/init.vim"
+alias vim="nvim"
+
+# etc
+alias h="history | fzf"
+alias grep="grep --color=auto -i"
+
+# python
+alias p="python"

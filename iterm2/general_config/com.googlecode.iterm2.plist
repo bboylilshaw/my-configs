@@ -263,7 +263,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -291,9 +291,9 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>197 1464 735 382 0 0 1344 817 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 35 1344 782 0 0 1344 817 </string>
+	<string>0 36 1344 781 0 0 1344 817 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 35 1145 782 0 0 1344 817 </string>
+	<string>1344 632 2560 1417 1344 632 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -866,7 +866,7 @@
 			<key>Name</key>
 			<string>JasonXiao</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>HackNerdFontComplete-Regular 24</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -1232,13 +1232,13 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1.05</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>15</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/jasonxiao</string>
 		</dict>
@@ -2216,31 +2216,30 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Cascadia Mono PL</string>
-		<string>Helvetica</string>
-		<string>JetBrains Mono</string>
+		<string>Monaco</string>
+		<string>Hack Nerd Font</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1344, 840}}</string>
+		<string>{{1344, 632}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{152, 766}</string>
+		<string>{1430, 1158}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>29B74EFB-6990-463B-B215-A0154956A4C5</string>
 	<key>NoSyncLastTipTime</key>
-	<real>608281451.242944</real>
+	<real>608541671.00318801</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>11</integer>
+	<integer>17</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>607312840.18587101</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2701,6 +2700,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.titleOverrideFormat</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.tty</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -2970,26 +2977,29 @@
 	<real>606979157.77224302</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>0004</string>
-		<string>0000</string>
 		<string>0010</string>
-		<string>0008</string>
-		<string>0017</string>
-		<string>0007</string>
-		<string>0003</string>
-		<string>0013</string>
-		<string>0016</string>
-		<string>0006</string>
-		<string>0002</string>
-		<string>000</string>
-		<string>0012</string>
-		<string>0009</string>
-		<string>0005</string>
-		<string>0001</string>
-		<string>0011</string>
 		<string>0015</string>
-		<string>0014</string>
+		<string>0004</string>
+		<string>0009</string>
+		<string>0013</string>
+		<string>0002</string>
 		<string>0018</string>
+		<string>0007</string>
+		<string>0011</string>
+		<string>0000</string>
+		<string>0016</string>
+		<string>0005</string>
+		<string>0020</string>
+		<string>0014</string>
+		<string>0003</string>
+		<string>0019</string>
+		<string>0008</string>
+		<string>0012</string>
+		<string>0001</string>
+		<string>000</string>
+		<string>0017</string>
+		<string>0006</string>
+		<string>0021</string>
 	</array>
 	<key>OpenFileInNewWindows</key>
 	<false/>
@@ -3041,15 +3051,19 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-10T12:54:54Z</date>
+	<date>2020-04-14T16:01:54Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SmartPlacement</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>1</integer>
+	<integer>3</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Profiles</string>

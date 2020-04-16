@@ -2,3 +2,5 @@
 .log
 # Editor directories and files
 .idea
+
+.alias.work
