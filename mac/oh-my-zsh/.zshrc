@@ -13,11 +13,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 export PATH=$PATH:$HOME/Workspace/tess-cli
 
 # Set fzf installation directory path
-export FZF_BASE=/usr/local/Cellar/fzf/0.21.1
-
+#export FZF_BASE=/usr/local/Cellar/fzf/0.21.1
 # Uncomment the following line to disable fuzzy completion
 # export DISABLE_FZF_AUTO_COMPLETION="true"
-
 # Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
 # export DISABLE_FZF_KEY_BINDINGS="true"
 
@@ -27,9 +25,14 @@ plugins=(
   mvn
   nvm
   npm
+  yarn
   docker
+  docker-compose
   kubectl
   colored-man-pages
+  colorize
+  command-not-found
+  thefuck
   fzf
   z 
   zsh-autosuggestions 
@@ -60,3 +63,20 @@ POWERLEVEL9K_LEGACY_ICON_SPACING=true
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# fzf config
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Uncomment the following line to disable fuzzy completion
+# export DISABLE_FZF_AUTO_COMPLETION="true"
+# Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
+# export DISABLE_FZF_KEY_BINDINGS="true"
+
+# java config
+jdk() {
+	version=$1
+        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        java -version
+}
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"

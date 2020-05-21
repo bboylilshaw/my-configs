@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>ApplePressAndHoldEnabled</key>
@@ -234,13 +236,13 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Workspace/my-configs/iterm2/profiles</string>
+	<string>~/Workspace/my-configs/mac/iterm2/general_config</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 448}</string>
+	<string>{841, 448}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
 	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -287,13 +289,13 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 118 224 275 0 0 1344 817 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>251 196 841 470 0 0 1344 817 </string>
+	<string>2480 456 799 448 -1536 -566 1536 937 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>197 1464 735 382 0 0 1344 817 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 36 1344 781 0 0 1344 817 </string>
+	<string>-1344 -446 1344 817 -1344 -446 1344 817 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1344 632 2560 1417 1344 632 2560 1417 </string>
+	<string>290 25 1130 848 0 0 1536 937 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1842,7 +1844,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>JetBrainsMono-Medium 24</string>
+			<string>JetBrainsMono-Medium 20</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2224,16 +2226,16 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{1344, 632}, {2560, 1440}}</string>
+		<string>{{1920, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{1430, 1158}</string>
+		<string>{2152, 850}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>29B74EFB-6990-463B-B215-A0154956A4C5</string>
 	<key>NoSyncLastTipTime</key>
-	<real>608541671.00318801</real>
+	<real>611734467.66790295</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>17</integer>
+	<integer>25</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -2977,29 +2979,55 @@
 	<real>606979157.77224302</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>0010</string>
-		<string>0015</string>
-		<string>0004</string>
-		<string>0009</string>
-		<string>0013</string>
-		<string>0002</string>
-		<string>0018</string>
-		<string>0007</string>
-		<string>0011</string>
-		<string>0000</string>
-		<string>0016</string>
-		<string>0005</string>
-		<string>0020</string>
-		<string>0014</string>
-		<string>0003</string>
-		<string>0019</string>
-		<string>0008</string>
-		<string>0012</string>
-		<string>0001</string>
-		<string>000</string>
 		<string>0017</string>
-		<string>0006</string>
+		<string>0029</string>
+		<string>0001</string>
+		<string>0013</string>
+		<string>0025</string>
+		<string>0037</string>
 		<string>0021</string>
+		<string>0033</string>
+		<string>0045</string>
+		<string>0041</string>
+		<string>0006</string>
+		<string>0018</string>
+		<string>0002</string>
+		<string>0014</string>
+		<string>0026</string>
+		<string>0038</string>
+		<string>0010</string>
+		<string>0022</string>
+		<string>000</string>
+		<string>0034</string>
+		<string>0046</string>
+		<string>0030</string>
+		<string>0042</string>
+		<string>0007</string>
+		<string>0019</string>
+		<string>0003</string>
+		<string>0015</string>
+		<string>0027</string>
+		<string>0039</string>
+		<string>0011</string>
+		<string>0023</string>
+		<string>0035</string>
+		<string>0031</string>
+		<string>0043</string>
+		<string>0008</string>
+		<string>0004</string>
+		<string>0016</string>
+		<string>0028</string>
+		<string>0000</string>
+		<string>0012</string>
+		<string>0024</string>
+		<string>0036</string>
+		<string>0020</string>
+		<string>0032</string>
+		<string>0044</string>
+		<string>0040</string>
+		<string>0009</string>
+		<string>0005</string>
+		<string>0047</string>
 	</array>
 	<key>OpenFileInNewWindows</key>
 	<false/>
@@ -3039,7 +3067,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/yxiao6/Workspace/my-configs/iterm2/general_config</string>
+	<string>/Users/yxiao6/Workspace/my-configs/mac/iterm2/general_config</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -3051,9 +3079,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-14T16:01:54Z</date>
+	<date>2020-05-21T02:19:00Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SavePasteHistory</key>
+	<true/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SoundForEsc</key>
