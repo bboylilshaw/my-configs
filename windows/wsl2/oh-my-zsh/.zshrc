@@ -1,7 +1,13 @@
 export ZSH="/home/xiaoyao/.oh-my-zsh"
 
 ZSH_THEME="jason"
-plugins=(git git-extras z zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
+plugins=(
+  git
+  z
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-history-substring-search
+)
 
 export DOCKER_HOST=tcp://localhost:2375
 
@@ -16,6 +22,8 @@ alias p="python"
 
 # source at last step
 source $ZSH/oh-my-zsh.sh
+
+# disable folder underline style
 # these have to be put after source
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none

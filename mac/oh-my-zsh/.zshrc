@@ -6,11 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/yxiao6/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
-export PATH=$PATH:$HOME/Workspace/tess-cli
 
 # Set fzf installation directory path
 #export FZF_BASE=/usr/local/Cellar/fzf/0.21.1
@@ -48,13 +46,16 @@ export NVM_DIR="$HOME/.nvm"
 # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# aliases
-[ -f .alias.generic ] && source .alias.generic
-[ -f .alias.mac ] && source .alias.mac
-[ -f .alias.work ] && source .alias.work
+# extra configs & aliases
+[ -f .config.generic ] && source .config.generic
+[ -f .config.wsl ] && source .config.wsl
+[ -f .config.mac ] && source .config.mac
+[ -f .config.work ] && source .config.work
 
 source $ZSH/oh-my-zsh.sh
 
+# disable folder underline style
+# these have to be put after source
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
@@ -80,3 +81,4 @@ jdk() {
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
