@@ -28,7 +28,6 @@ plugins=(
   docker-compose
   kubectl
   colored-man-pages
-  colorize
   command-not-found
   thefuck
   fzf
@@ -82,3 +81,11 @@ jdk() {
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+# ruby
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+eval "$(rbenv init -)"
+
+# python
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

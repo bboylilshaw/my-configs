@@ -1,6 +1,7 @@
+# zsh
 alias zshcfg="nvim ~/.zshrc"
 
-# vim editor
+# neovim
 alias nvimcfg="nvim ~/.config/nvim/init.vim"
 alias vimcfg="nvim ~/.config/nvim/init.vim"
 alias vim="nvim"
