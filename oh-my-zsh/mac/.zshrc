@@ -71,12 +71,6 @@ POWERLEVEL9K_LEGACY_ICON_SPACING=true
 # Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
 # export DISABLE_FZF_KEY_BINDINGS="true"
 
-# java config
-jdk() {
-	version=$1
-        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
-        java -version
-}
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
@@ -89,3 +83,6 @@ eval "$(rbenv init -)"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# the fuck
+eval $(thefuck --alias)
