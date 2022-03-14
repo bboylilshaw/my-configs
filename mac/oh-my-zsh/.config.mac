@@ -1,0 +1,6 @@
+alias brewlib="cd /usr/local/Cellar/"
+
+# colorls
+alias l="colorls -l"
+alias ll="colorls -l"
+alias ld="colorls -lA --sd"
