@@ -91,6 +91,6 @@ fi
 ###########################
 
 # PUT customized configs & alias at the bottom to override existings
-[ -f .config.generic ] && source .config.generic
-[ -f .config.mac ] && source .config.mac
-[ -f .config.work ] && source .config.work
+[ -f .config.generic.zsh ] && source .config.generic.zsh
+[ -f .config.mac.zsh ] && source .config.mac.zsh
+[ -f .config.work.zsh ] && source .config.work.zsh

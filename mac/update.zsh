@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+set -e
+
+OH_MY_ZSH_PATH="$HOME/.oh-my-zsh/"
+
+if [ -d "$OH_MY_ZSH_PATH" ]; then
+  echo "Updating config files in ${OH_MY_ZSH_PATH}..."
+  current_path=`dirname $0`
+  cp $current_path/oh-my-zsh/.zshrc $HOME/
+  cp $current_path/oh-my-zsh/.config.mac.zsh $HOME/
+  cp $current_path/../shared/oh-my-zsh/.config.generic.zsh $HOME/
+  echo "Done updating oh-my-zsh configs"
+else
+  echo "${OH_MY_ZSH_PATH} not found. continue..."
+fi

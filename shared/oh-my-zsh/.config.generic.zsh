@@ -1,11 +1,12 @@
+# zsh
 alias zshcfg="nvim ~/.zshrc"
 
-# vim editor
+# vim/neovim editor
 alias nvimcfg="nvim ~/.config/nvim/init.vim"
 alias vimcfg="nvim ~/.config/nvim/init.vim"
 alias vim="nvim"
 
-# etc
+# search
 alias h="history | fzf"
 alias grep="grep --color=auto -i"
 
@@ -15,6 +16,8 @@ alias p2="python"
 alias pip="pip3"
 
 # colorls
-alias cl="colorls"
-alias cll="colorls -l"
-alias cld="colorls -lA --sd"
+if (( $+commands[colorls] )); then
+  alias l="colorls"
+  alias ll="colorls -l"
+  alias ld="colorls -lA --sd"
+fi
