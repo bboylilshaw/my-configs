@@ -5,13 +5,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="/home/xiaoyao/.oh-my-zsh"
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
     git
     docker
+    kubectl
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -19,9 +21,11 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# disable folder underline style
 # these have to be put after source
-ZSH_HIGHLIGHT_STYLES[path]=none
-ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+# ZSH_HIGHLIGHT_STYLES[path]=none
+# ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -30,9 +34,6 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 ##########################
 ### Development tools ####
 ##########################
-# Nodejs nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
 # Ruby rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -43,9 +44,16 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Node.js nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 ###########################
 ### User Configuration ####
 ###########################
-[ -f $HOME/.config.generic ] && source $HOME/.config.generic
-[ -f $HOME/.config.wsl2 ] && source $HOME/.config.wsl2
+
+# PUT customized configs & alias at the bottom to override existings
+[ -f .config.generic.zsh ] && source .config.generic.zsh
+[ -f .config.wsl2.zsh ] && source .config.mac.zsh
