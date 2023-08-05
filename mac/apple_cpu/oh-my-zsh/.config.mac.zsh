@@ -1,8 +1,8 @@
-# Homebrew Apple M1 CPU version
-export BREW_HOME="/opt/homebrew"
+# Homebrew alias
 alias brewlib="cd ${BREW_HOME}/Cellar/"
 alias bi="brew install"
 alias bl="brew list"
+alias bo="brew outdated"
 alias bup="brew update"
 alias bug="brew upgrade"
 alias bs="brew search"

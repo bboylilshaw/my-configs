@@ -3,4 +3,4 @@
 # Editor directories and files
 .idea
 
-.alias.work
+.config.work.zsh

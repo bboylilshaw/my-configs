@@ -16,6 +16,7 @@ alias p2="python"
 alias pip="pip3"
 
 # colorls
+# need to install `colorls` ruby gem first by `gem install colorls`
 if (( $+commands[colorls] )); then
   alias l="colorls"
   alias ll="colorls -l"
